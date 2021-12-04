@@ -1,0 +1,11 @@
+services:
+  productmicroservice:
+    build:
+      context: D:\Microservices\ProductMicroservice
+      dockerfile: ProductMicroservice/Dockerfile
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+    image: productmicroservice
+    ports:
+    - target: 80
+version: '3.4'
