@@ -24,6 +24,7 @@ namespace ProductMicroservice
     // This method gets called by the runtime. Use this method to add services to the container.
     public void ConfigureServices(IServiceCollection services)
     {
+        services.AddSession();
         services.AddTokenAuthentication(Configuration);
         services.AddSwaggerGen();  
          services.AddMvc(options =>
@@ -53,6 +54,7 @@ namespace ProductMicroservice
       {
         app.UseHsts();
       }
+      app.UseSession();
       app.UseAuthentication();  
       app.UseAuthorization();  
       app.UseHttpsRedirection();

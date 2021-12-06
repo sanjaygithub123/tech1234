@@ -4,14 +4,14 @@
     "c:\\San\\test projects\\PMS\\tech1234\\ProductMicroservice\\ProductMicroservice.csproj": {}
   },
   "projects": {
-    "C:\\San\\test projects\\PMS\\tech1234\\Pms.Core\\Pms.Core.csproj": {
+    "c:\\San\\test projects\\PMS\\tech1234\\Pms.Core\\Pms.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\San\\test projects\\PMS\\tech1234\\Pms.Core\\Pms.Core.csproj",
+        "projectUniqueName": "c:\\San\\test projects\\PMS\\tech1234\\Pms.Core\\Pms.Core.csproj",
         "projectName": "Pms.Core",
-        "projectPath": "C:\\San\\test projects\\PMS\\tech1234\\Pms.Core\\Pms.Core.csproj",
+        "projectPath": "c:\\San\\test projects\\PMS\\tech1234\\Pms.Core\\Pms.Core.csproj",
         "packagesPath": "C:\\Users\\sangupta0\\.nuget\\packages\\",
-        "outputPath": "C:\\San\\test projects\\PMS\\tech1234\\Pms.Core\\obj\\",
+        "outputPath": "c:\\San\\test projects\\PMS\\tech1234\\Pms.Core\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -84,8 +84,8 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "C:\\San\\test projects\\PMS\\tech1234\\Pms.Core\\Pms.Core.csproj": {
-                "projectPath": "C:\\San\\test projects\\PMS\\tech1234\\Pms.Core\\Pms.Core.csproj"
+              "c:\\San\\test projects\\PMS\\tech1234\\Pms.Core\\Pms.Core.csproj": {
+                "projectPath": "c:\\San\\test projects\\PMS\\tech1234\\Pms.Core\\Pms.Core.csproj"
               }
             }
           }
@@ -108,9 +108,17 @@
               "target": "Package",
               "version": "[2.1.2, )"
             },
+            "Microsoft.AspNetCore.Session": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
               "version": "[5.0.0, )"
+            },
+            "Microsoft.Extensions.Caching.Memory": {
+              "target": "Package",
+              "version": "[6.0.0, )"
             },
             "Microsoft.IdentityModel.Tokens": {
               "target": "Package",

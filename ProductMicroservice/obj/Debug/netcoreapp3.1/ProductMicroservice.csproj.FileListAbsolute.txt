@@ -160,3 +160,4 @@ c:\San\test projects\PMS\tech1234\ProductMicroservice\obj\Debug\netcoreapp3.1\Pr
 c:\San\test projects\PMS\tech1234\ProductMicroservice\obj\Debug\netcoreapp3.1\ProductMicroservice.csproj.CopyComplete
 c:\San\test projects\PMS\tech1234\ProductMicroservice\obj\Debug\netcoreapp3.1\ProductMicroservice.dll
 c:\San\test projects\PMS\tech1234\ProductMicroservice\obj\Debug\netcoreapp3.1\ProductMicroservice.pdb
+c:\San\test projects\PMS\tech1234\ProductMicroservice\bin\Debug\netcoreapp3.1\System.Runtime.CompilerServices.Unsafe.dll
