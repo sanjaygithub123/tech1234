@@ -7758,11 +7758,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "c:\\San\\test projects\\ProductMicroservice\\ProductMicroservice\\ProductMicroservice.csproj",
+      "projectUniqueName": "c:\\San\\test projects\\PMS\\tech1234\\ProductMicroservice\\ProductMicroservice.csproj",
       "projectName": "ProductMicroservice",
-      "projectPath": "c:\\San\\test projects\\ProductMicroservice\\ProductMicroservice\\ProductMicroservice.csproj",
+      "projectPath": "c:\\San\\test projects\\PMS\\tech1234\\ProductMicroservice\\ProductMicroservice.csproj",
       "packagesPath": "C:\\Users\\sangupta0\\.nuget\\packages\\",
-      "outputPath": "c:\\San\\test projects\\ProductMicroservice\\ProductMicroservice\\obj\\",
+      "outputPath": "c:\\San\\test projects\\PMS\\tech1234\\ProductMicroservice\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -7779,8 +7779,8 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "C:\\San\\test projects\\ProductMicroservice\\Pms.Core\\Pms.Core.csproj": {
-              "projectPath": "C:\\San\\test projects\\ProductMicroservice\\Pms.Core\\Pms.Core.csproj"
+            "C:\\San\\test projects\\PMS\\tech1234\\Pms.Core\\Pms.Core.csproj": {
+              "projectPath": "C:\\San\\test projects\\PMS\\tech1234\\Pms.Core\\Pms.Core.csproj"
             }
           }
         }
