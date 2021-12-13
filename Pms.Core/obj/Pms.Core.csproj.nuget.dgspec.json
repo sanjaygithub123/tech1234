@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "c:\\San\\test projects\\PMS\\tech1234\\Pms.Core\\Pms.Core.csproj": {}
+    "C:\\San\\test projects\\PMS\\tech1234\\Pms.Core\\Pms.Core.csproj": {}
   },
   "projects": {
-    "c:\\San\\test projects\\PMS\\tech1234\\Pms.Core\\Pms.Core.csproj": {
+    "C:\\San\\test projects\\PMS\\tech1234\\Pms.Core\\Pms.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\San\\test projects\\PMS\\tech1234\\Pms.Core\\Pms.Core.csproj",
+        "projectUniqueName": "C:\\San\\test projects\\PMS\\tech1234\\Pms.Core\\Pms.Core.csproj",
         "projectName": "Pms.Core",
-        "projectPath": "c:\\San\\test projects\\PMS\\tech1234\\Pms.Core\\Pms.Core.csproj",
+        "projectPath": "C:\\San\\test projects\\PMS\\tech1234\\Pms.Core\\Pms.Core.csproj",
         "packagesPath": "C:\\Users\\sangupta0\\.nuget\\packages\\",
-        "outputPath": "c:\\San\\test projects\\PMS\\tech1234\\Pms.Core\\obj\\",
+        "outputPath": "C:\\San\\test projects\\PMS\\tech1234\\Pms.Core\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

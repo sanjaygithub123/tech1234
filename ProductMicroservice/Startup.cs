@@ -8,6 +8,7 @@ using Microsoft.Extensions.DependencyInjection;
 using ProductMicroservice.DBContexts;
 using ProductMicroservice.Filters;
 using ProductMicroservice.Repository;
+using Microsoft.AspNetCore.Authentication.Cookies;
 
 namespace ProductMicroservice
 {
@@ -25,7 +26,21 @@ namespace ProductMicroservice
     public void ConfigureServices(IServiceCollection services)
     {
         services.AddSession();
-        services.AddTokenAuthentication(Configuration);
+        //services.AddTokenAuthentication(Configuration);
+        //uncomment above line to enable JWT tokn authentication and comment google authentication
+         services.AddAuthentication(options =>
+        {
+            options.DefaultScheme = CookieAuthenticationDefaults.AuthenticationScheme;
+        })
+        .AddCookie(options =>
+        {
+            options.LoginPath = "/api/account"; // Must be lowercase
+        })
+        .AddGoogle(options =>
+        {
+            options.ClientId = "687625044779-8u21a9al83hn97ljh0efqdulphusn5jp.apps.googleusercontent.com";
+            options.ClientSecret = "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";
+        });
         services.AddSwaggerGen();  
          services.AddMvc(options =>
             {
@@ -35,6 +50,9 @@ namespace ProductMicroservice
      // services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
       //services.AddDbContext<ProductContext>(o => o.UseSqlServer(Configuration.GetConnectionString("ProductDB")));
       services.AddTransient<IProductRepository, ProductRepository>();
+
+      
+ 
     }
 
     // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
