@@ -9,6 +9,8 @@ Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-co
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pms.Core", "Pms.Core\Pms.Core.csproj", "{9C14EBC0-D31D-4DC5-ACFB-0B4EE2979C41}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pms.Bdd", "Pms.Bdd\Pms.Bdd.csproj", "{9723FE0C-1C1A-48BB-8928-F0D87ED40514}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{9C14EBC0-D31D-4DC5-ACFB-0B4EE2979C41}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9C14EBC0-D31D-4DC5-ACFB-0B4EE2979C41}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9C14EBC0-D31D-4DC5-ACFB-0B4EE2979C41}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9723FE0C-1C1A-48BB-8928-F0D87ED40514}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9723FE0C-1C1A-48BB-8928-F0D87ED40514}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9723FE0C-1C1A-48BB-8928-F0D87ED40514}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9723FE0C-1C1A-48BB-8928-F0D87ED40514}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
