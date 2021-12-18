@@ -35,9 +35,11 @@ namespace ProductMicroservice
             
     }
 
-    public static IWebHostBuilder CreateWebHostBuilder(string[] args,IConfigurationRoot configuration) =>
-        WebHost.CreateDefaultBuilder(args)
+    public static IWebHostBuilder CreateWebHostBuilder(string[] args,IConfigurationRoot configuration)
+      {
+        return WebHost.CreateDefaultBuilder(args)
         .UseConfiguration(configuration)
             .UseStartup<Startup>();
+      }
   }
 }

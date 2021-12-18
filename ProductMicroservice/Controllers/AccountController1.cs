@@ -28,6 +28,10 @@ namespace ProductMicroservice.Controllers
     public  string GoogleResponse()
     {
         var result = HttpContext.AuthenticateAsync(CookieAuthenticationDefaults.AuthenticationScheme).Result;
+        if(result.Principal == null)
+        {
+            Redirect("https://localhost:5001/api/Account/");
+        }
  
         var claims = result.Principal.Identities
             .FirstOrDefault().Claims.Select(claim => new

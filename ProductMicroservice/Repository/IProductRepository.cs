@@ -5,7 +5,7 @@ namespace ProductMicroservice.Repository
 {
   public interface IProductRepository
   {
-    //IEnumerable<Product> GetProducts();
+    IEnumerable<Product> GetProducts();
     Product GetProductByID(int product);
     void RaiseNullReferenceException();
    // void InsertProduct(Product product);

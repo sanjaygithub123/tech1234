@@ -29,22 +29,5 @@ namespace ProductMicroservice.Controllers
             return Challenge(properties, GoogleDefaults.AuthenticationScheme);
         }  
 
-        [HttpGet]  
-        [Route("api/Account/GoogleResponse")]
-    public  string GoogleResponse()
-    {
-        var result = HttpContext.AuthenticateAsync(CookieAuthenticationDefaults.AuthenticationScheme).Result;
- 
-        var claims = result.Principal.Identities
-            .FirstOrDefault().Claims.Select(claim => new
-        {
-            claim.Issuer,
-            claim.OriginalIssuer,
-            claim.Type,
-            claim.Value
-        });
- 
-        return JsonConvert.SerializeObject(claims);
-    }
     }  
 }  

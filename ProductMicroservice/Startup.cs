@@ -26,21 +26,31 @@ namespace ProductMicroservice
     public void ConfigureServices(IServiceCollection services)
     {
         services.AddSession();
-        //services.AddTokenAuthentication(Configuration);
-        //uncomment above line to enable JWT tokn authentication and comment google authentication
-         services.AddAuthentication(options =>
+        
+        var authBuilder =services.AddAuthentication(options =>
         {
             options.DefaultScheme = CookieAuthenticationDefaults.AuthenticationScheme;
         })
         .AddCookie(options =>
         {
             options.LoginPath = "/api/account"; // Must be lowercase
-        })
-        .AddGoogle(options =>
-        {
-            options.ClientId = "687625044779-8u21a9al83hn97ljh0efqdulphusn5jp.apps.googleusercontent.com";
-            options.ClientSecret = "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";
         });
+        bool isOauthGoogleAuthenticationEnabled = Configuration.GetValue<bool>("OauthGoogleEnabled");
+        if(isOauthGoogleAuthenticationEnabled)
+        {
+            authBuilder.AddGoogle(options =>
+          {
+              options.ClientId = "687625044779-8u21a9al83hn97ljh0efqdulphusn5jp.apps.googleusercontent.com";
+              options.ClientSecret = "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";
+          });
+        }
+        else
+        {
+          //enable JWT authentication
+          services.AddTokenAuthentication(Configuration);
+        }
+
+      
         services.AddSwaggerGen();  
          services.AddMvc(options =>
             {

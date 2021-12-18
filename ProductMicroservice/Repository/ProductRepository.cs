@@ -41,10 +41,28 @@ namespace ProductMicroservice.Repository
       throw new NullReferenceException();
     }
 
-    // public IEnumerable<Product> GetProducts()
-    // {
-    //   return _dbContext.Products.ToList();
-    // }
+    public IEnumerable<Product> GetProducts()
+    {
+      List<Product> products = new List<Product>();
+       Product product1 = new Product();
+      product1.CategoryId = 1;
+      product1.Description = "Lenovo Laptop";
+      product1.Name = "Laptop";
+      product1.Id = 10;
+      product1.Price = 60000;
+      products.Add(product1);
+
+      Product product2 = new Product();
+      product2.CategoryId = 1;
+      product2.Description = "Mouse";
+      product2.Name = "Mouse";
+      product2.Id = 10;
+      product2.Price = 100;
+      products.Add(product2);
+      
+      return products;
+      //return _dbContext.Products.ToList();
+    }
 
     // public void InsertProduct(Product product)
     // {

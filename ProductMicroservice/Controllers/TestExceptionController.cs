@@ -12,33 +12,24 @@ namespace ProductMicroservice.Controllers
   [Route("api/[controller]")]
   [ApiController]
   [Authorize] 
-  public class ProductController : ControllerBase
+  public class TestExceptionController : ControllerBase
   {
 
     private readonly IProductRepository _productRepository;
 
-    public ProductController(IProductRepository productRepository)
+    public TestExceptionController(IProductRepository productRepository)
     {
       _productRepository = productRepository;
     }
-    // GET: api/Product
-    [HttpGet]
+    
+     [HttpGet(Name = "GetNullReferenceException")]
     public IActionResult Get()
     {
-      var products = _productRepository.GetProducts();
-      return new OkObjectResult(products);
-    }
-
-    // GET: api/Product/5
-    [HttpGet("{id}", Name = "Get")]
-    public IActionResult Get(int id)
-    {
       Log.Information(LoggingEvent.Controller,"With in Get By ProductId method");
-      var product = _productRepository.GetProductByID(id);
-      return new OkObjectResult(product);
+      _productRepository.RaiseNullReferenceException();
+      return new OkObjectResult(null);
     }
 
-     
 
     // POST: api/Product
     // [HttpPost]
