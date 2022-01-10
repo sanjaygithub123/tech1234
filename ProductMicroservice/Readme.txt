@@ -6,7 +6,7 @@ Call https://localhost:5001/api/Account to redirect on google login
 bearer token with requestHeader. call https://localhost:5001/Token to get bearer token
 -Call https://localhost:5001/api/Session to look how session management work
 -Call https://localhost:5001/api/swagger to look swagger page
--Call https://localhost:5001/api/TestException to look how centralize exception works
+-Call https://localhost:5001/api/TestException to look how centralize exception works.
 -Look tech1234\Logs folder to see logs, aslo look Serilog configuration in appsetting.json file
 -Look Pms.Bdd to look Specflow BDD development, exceute "dotnet test" command in Pms.Core folder
  To execute test cases, run "$env:VSTEST_HOST_DEBUG=1" command on terminal and then run "dotnet test"
