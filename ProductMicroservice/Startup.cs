@@ -9,6 +9,7 @@ using ProductMicroservice.DBContexts;
 using ProductMicroservice.Filters;
 using ProductMicroservice.Repository;
 using Microsoft.AspNetCore.Authentication.Cookies;
+using Pms.ProductMicroservice.Common;
 
 namespace ProductMicroservice
 {
@@ -18,6 +19,7 @@ namespace ProductMicroservice
     {
       Configuration = configuration;
       var secret = Configuration.GetSection("JwtConfig").GetSection("secret").Value;  
+      PMSConfiguration.Configuration = configuration;
     }
 
     public IConfiguration Configuration { get; }

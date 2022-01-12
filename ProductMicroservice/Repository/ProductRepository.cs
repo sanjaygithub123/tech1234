@@ -27,7 +27,7 @@ namespace ProductMicroservice.Repository
     {
       Product product = new Product();
       product.CategoryId = 1;
-      product.Description = "Lenovo Laptop";
+      product.Description = "Lenovo Laptop - staging slot";
       product.Name = "Laptop";
       product.Id = 10;
       product.Price = 60000;

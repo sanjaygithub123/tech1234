@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "c:\\San\\TestProject\\tech1234\\Pms.Core\\Pms.Core.csproj": {}
+    "C:\\San\\TestProject\\tech1234\\Pms.Core\\Pms.Core.csproj": {}
   },
   "projects": {
-    "c:\\San\\TestProject\\tech1234\\Pms.Core\\Pms.Core.csproj": {
+    "C:\\San\\TestProject\\tech1234\\Pms.Core\\Pms.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\San\\TestProject\\tech1234\\Pms.Core\\Pms.Core.csproj",
+        "projectUniqueName": "C:\\San\\TestProject\\tech1234\\Pms.Core\\Pms.Core.csproj",
         "projectName": "Pms.Core",
-        "projectPath": "c:\\San\\TestProject\\tech1234\\Pms.Core\\Pms.Core.csproj",
+        "projectPath": "C:\\San\\TestProject\\tech1234\\Pms.Core\\Pms.Core.csproj",
         "packagesPath": "C:\\Users\\sangupta0\\.nuget\\packages\\",
-        "outputPath": "c:\\San\\TestProject\\tech1234\\Pms.Core\\obj\\",
+        "outputPath": "C:\\San\\TestProject\\tech1234\\Pms.Core\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\sangupta0\\AppData\\Roaming\\NuGet\\NuGet.Config"

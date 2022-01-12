@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Authentication.Google;
 using Microsoft.AspNetCore.Mvc;  
 using Microsoft.Extensions.Configuration;
 using Newtonsoft.Json;
+using Pms.ProductMicroservice.Common;
 
 namespace ProductMicroservice.Controllers  
 {  
@@ -25,7 +26,7 @@ namespace ProductMicroservice.Controllers
         [HttpGet]  
         public IActionResult GetLogin()  
         {  
-            var properties = new AuthenticationProperties { RedirectUri = "https://localhost:5001/api/Account1/"};
+            var properties = new AuthenticationProperties { RedirectUri = string.IsNullOrEmpty(PMSConstant.BaseURL)? $"{PMSConstant.DefaultBaseURL}/api/Account1/":$"{PMSConstant.BaseURL}/api/Account1/"};
             return Challenge(properties, GoogleDefaults.AuthenticationScheme);
         }  
 

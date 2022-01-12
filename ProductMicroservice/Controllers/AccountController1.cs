@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Authentication.Google;
 using Microsoft.AspNetCore.Mvc;  
 using Microsoft.Extensions.Configuration;
 using Newtonsoft.Json;
+using Pms.ProductMicroservice.Common;
 
 namespace ProductMicroservice.Controllers  
 {  
@@ -30,7 +31,7 @@ namespace ProductMicroservice.Controllers
         var result = HttpContext.AuthenticateAsync(CookieAuthenticationDefaults.AuthenticationScheme).Result;
         if(result.Principal == null)
         {
-            Redirect("https://localhost:5001/api/Account/");
+            Redirect(string.IsNullOrEmpty(PMSConstant.BaseURL)? $"{PMSConstant.DefaultBaseURL}/api/Account/":$"{PMSConstant.BaseURL}/api/Account/");
         }
  
         var claims = result.Principal.Identities

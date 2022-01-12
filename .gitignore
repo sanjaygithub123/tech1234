@@ -1,4 +1,6 @@
 /build/
+*.dll
+*.pdb
 *.suo
 *.user
 _ReSharper.*/
@@ -17,5 +19,8 @@ Version.h
 Version.cpp
 */bin/*
 */obj/*
+*/publish/*
+publish/
 Pms.Core/obj/*
 
+.gitignore
