@@ -11,6 +11,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pms.Core", "Pms.Core\Pms.Co
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pms.Bdd", "Pms.Bdd\Pms.Bdd.csproj", "{9723FE0C-1C1A-48BB-8928-F0D87ED40514}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Azure", "Azure", "{C323CB49-1035-4336-8815-43EEAC64E236}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FunApp", "Azure\FunApp\FunApp.csproj", "{86C9E68B-21A0-4041-9F15-9E0407E02AFE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,11 +37,18 @@ Global
 		{9723FE0C-1C1A-48BB-8928-F0D87ED40514}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9723FE0C-1C1A-48BB-8928-F0D87ED40514}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9723FE0C-1C1A-48BB-8928-F0D87ED40514}.Release|Any CPU.Build.0 = Release|Any CPU
+		{86C9E68B-21A0-4041-9F15-9E0407E02AFE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{86C9E68B-21A0-4041-9F15-9E0407E02AFE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{86C9E68B-21A0-4041-9F15-9E0407E02AFE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{86C9E68B-21A0-4041-9F15-9E0407E02AFE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {6A3026C1-4FA7-4892-BDF1-666C662CF1E3}
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{86C9E68B-21A0-4041-9F15-9E0407E02AFE} = {C323CB49-1035-4336-8815-43EEAC64E236}
 	EndGlobalSection
 EndGlobal
