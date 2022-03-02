@@ -46,19 +46,27 @@ namespace ProductMicroservice.Repository
       List<Product> products = new List<Product>();
        Product product1 = new Product();
       product1.CategoryId = 1;
-      product1.Description = "Lenovo Laptop";
-      product1.Name = "Laptop";
+      product1.Description = "Staging slot - Lenovo Laptop";
+      product1.Name = "Staging slot -Laptop";
       product1.Id = 10;
       product1.Price = 60000;
       products.Add(product1);
 
       Product product2 = new Product();
       product2.CategoryId = 1;
-      product2.Description = "Mouse";
-      product2.Name = "Mouse";
-      product2.Id = 10;
-      product2.Price = 100;
+      product2.Description = "Staging slot -Mouse";
+      product2.Name = "Staging slot -Mouse";
+      product2.Id = 11;
+      product2.Price = 200;
       products.Add(product2);
+
+       Product product3 = new Product();
+      product3.CategoryId = 1;
+      product3.Description = "Staging slot -Keyboard";
+      product3.Name = "Staging slot -KeyBoard";
+      product3.Id = 12;
+      product3.Price = 200;
+      products.Add(product3);
       
       return products;
       //return _dbContext.Products.ToList();

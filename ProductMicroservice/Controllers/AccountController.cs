@@ -1,3 +1,4 @@
+using System;
 using System.Linq;
 using System.Threading.Tasks;
 using AuthTest.API.Services;
@@ -26,7 +27,9 @@ namespace ProductMicroservice.Controllers
         [HttpGet]  
         public IActionResult GetLogin()  
         {  
-            var properties = new AuthenticationProperties { RedirectUri = string.IsNullOrEmpty(PMSConstant.BaseURL)? $"{PMSConstant.DefaultBaseURL}/api/Account1/":$"{PMSConstant.BaseURL}/api/Account1/"};
+            var env1 = Environment.GetEnvironmentVariable("ASPNETCORE_ENVIRONMENT");
+            
+            var properties = new AuthenticationProperties { RedirectUri = PMSConstant.Env=="Development"? $"{PMSConstant.DefaultBaseURL}/api/product/":$"{PMSConstant.BaseURL}/api/product/"};
             return Challenge(properties, GoogleDefaults.AuthenticationScheme);
         }  
 

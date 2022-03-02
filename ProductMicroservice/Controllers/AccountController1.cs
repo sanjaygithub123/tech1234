@@ -31,7 +31,7 @@ namespace ProductMicroservice.Controllers
         var result = HttpContext.AuthenticateAsync(CookieAuthenticationDefaults.AuthenticationScheme).Result;
         if(result.Principal == null)
         {
-            Redirect(string.IsNullOrEmpty(PMSConstant.BaseURL)? $"{PMSConstant.DefaultBaseURL}/api/Account/":$"{PMSConstant.BaseURL}/api/Account/");
+            Redirect(PMSConstant.Env == "Development"? $"{PMSConstant.DefaultBaseURL}/api/Account/":$"{PMSConstant.BaseURL}/api/Account/");
         }
  
         var claims = result.Principal.Identities
