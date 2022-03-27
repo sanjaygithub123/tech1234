@@ -28,8 +28,6 @@ namespace ProductMicroservice
     private static void ConfigureLogging(IConfigurationRoot configuration)
     {
       
-       
-
             Log.Logger = new LoggerConfiguration().ReadFrom.Configuration(configuration).CreateLogger();
             Pms.Core.Logging.Log.Construct(new SerilogLogger(Log.Logger));
             

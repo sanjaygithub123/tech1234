@@ -59,7 +59,7 @@ namespace ProductMicroservice
               options.Filters.Add(new GlobalExceptionFilter());
                options.EnableEndpointRouting = false;
             });
-     // services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
+     services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
       //services.AddDbContext<ProductContext>(o => o.UseSqlServer(Configuration.GetConnectionString("ProductDB")));
       services.AddTransient<IProductRepository, ProductRepository>();
 
