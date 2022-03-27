@@ -52,8 +52,18 @@ namespace ProductMicroservice
           services.AddTokenAuthentication(Configuration);
         }
 
-      
+        services.AddCors(opt =>
+        {
+            opt.AddPolicy(name: "corsPolicy1", builder =>
+            {
+                builder.AllowAnyOrigin()
+                    .AllowAnyHeader()
+                    .AllowAnyMethod();
+            });
+        });
+
         services.AddSwaggerGen();  
+        
          services.AddMvc(options =>
             {
               options.Filters.Add(new GlobalExceptionFilter());
@@ -84,6 +94,7 @@ namespace ProductMicroservice
       {
         app.UseHsts();
       }
+      app.UseCors("corsPolicy1");
       app.UseSession();
       app.UseAuthentication();  
       app.UseAuthorization();  
