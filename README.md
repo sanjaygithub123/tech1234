@@ -23,7 +23,7 @@ Please read following instruction to run POC application.
 * Look tech1234\Logs folder to see logs, aslo look Serilog configuration in appsetting.json file
 * Look Pms.Bdd to look Specflow BDD development, exceute "dotnet test" command in Pms.Core folder
 * To execute test cases, run "$env:VSTEST_HOST_DEBUG=1" command on terminal and then run "dotnet test"
-*  which will give testhost processId. Press ctrl+shift+D to open "Run & Debug"  panel rather than 
-*  using .Net Core Launch, use .net Core Attch and select testhost.exe with same processid which got
-*  in dotnet test command
+  which will give testhost processId. Press ctrl+shift+D to open "Run & Debug"  panel rather than 
+  using .Net Core Launch, use .net Core Attch and select testhost.exe with same processid which got
+  in dotnet test command
 
