@@ -1,5 +1,4 @@
 {
-    "appService.defaultWebAppToDeploy": "/subscriptions/873cc871-ecfe-4ba0-ae05-e3598ccde3d2/resourceGroups/DefaultResourceGroup-CID/providers/Microsoft.Web/sites/TestAzSanWebApp1",
     "appService.deploySubpath": "publish",
     "azureFunctions.deploySubpath": "Azure\\FunApp/bin/Release/net6.0/publish",
     "azureFunctions.projectLanguage": "C#",

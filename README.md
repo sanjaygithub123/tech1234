@@ -13,7 +13,7 @@
 Please read following instruction to run POC application.
 * Set "OauthGoogleEnabled": "true" in appSetting.json file else by default JWT token
   will be enabled. See startup.cs for authentication configuration.
-* Call https://localhost:5001/api/swagger to look swagger page
+* Call https://localhost:5001/swagger to look swagger page
 * Set "OauthGoogleEnabled": "false" in appSetting.json file to use JWT token
 * Call https://localhost:5001/api/Product to call product service, if JWT is enabled then nee to pass
   bearer token with requestHeader. call https://localhost:5001/Token to get bearer token. If "OauthGoogleEnabled" : "true"

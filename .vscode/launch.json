@@ -5,7 +5,18 @@
     "version": "0.2.0",
     "configurations": [
 
-    
+        {
+            "name": "PMSGateway",
+            "type": "coreclr",
+            "request": "launch",
+            "preLaunchTask": "build",
+            "program": "${workspaceFolder}/Pms.APIGateway/bin/Debug/net6.0/Pms.APIGateway.dll",
+            "args": ["urls=https://localhost:8000"],
+            "cwd": "${workspaceFolder}",
+            "stopAtEntry": false,
+            "console": "internalConsole"
+        },
+
         {
             "name": "ProductMicroservice",
             "type": "coreclr",
@@ -29,5 +40,14 @@
             "request": "attach",
             "processId": "${command:azureFunctions.pickProcess}"
         }
-    ]
+        
+    ],
+    "compounds": [
+        {
+            "name": "Run both PMSService & PMSAPI Gateway",
+            "configurations": [
+                "ProductMicroservice",
+                "PMSGateway"
+            ]
+        }]
 }
