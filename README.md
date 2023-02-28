@@ -26,4 +26,5 @@ Please read following instruction to run POC application.
   which will give testhost processId. Press ctrl+shift+D to open "Run & Debug"  panel rather than 
   using .Net Core Launch, use .net Core Attch and select testhost.exe with same processid which got
   in dotnet test command
+* To run Ocelot API gate way. Select Run AND DEBUG "Run both PMSService And PMSAPI Gateway" and use URL https://localhost:8000;http://localhost:8001 like https://localhost:8000/api/product . See Ocelot configuration in PMS.APIGateway/configuration.json
 
